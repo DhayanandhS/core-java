@@ -3,7 +3,7 @@ package classes;
 public class StaticMethod {
     // int a = 5;
 	
-	static void show(int a) {
+	public void show(int a) {
 		System.out.println(a);
     }
 
@@ -11,8 +11,7 @@ public class StaticMethod {
 		// TODO Auto-generated method stub
 		
 		StaticMethod sm = new StaticMethod();
-		show(5);
+	    sm.show(5);
 
 	}
-
 }
