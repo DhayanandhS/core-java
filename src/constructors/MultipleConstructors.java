@@ -5,7 +5,8 @@ class Book {
 	int pages;
 	String book_name;
 	
-	// @override
+	// the whole point of constructor overloading — 
+	// you can choose which constructor to use depending on the arguments you pass.
 	Book(){
 		pages = 25;
 		book_name = "Maari";
