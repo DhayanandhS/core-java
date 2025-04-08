@@ -2,6 +2,7 @@ package constructors;
 
 class Copy{
 	int a;
+	// this is copy constructor
 	
 	Copy(){
 		a = 1;
