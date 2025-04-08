@@ -3,7 +3,7 @@ package constructors;
 class Copy{
 	int a;
 	// this is copy constructor
-	
+	// this code shows how we can passs the value between the contructors
 	Copy(){
 		a = 1;
 		System.out.println(a+1);
