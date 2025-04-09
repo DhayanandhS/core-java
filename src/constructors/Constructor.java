@@ -1,3 +1,4 @@
+// this is also a default constructor
 package constructors;
 
 class Demo {
