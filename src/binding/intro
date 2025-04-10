@@ -1,0 +1,70 @@
+🔗 What is Binding?
+Binding refers to the connection between a method call and the method body (definition).
+
+✅ 1. Static Binding (Early Binding)
+Happens at compile time.
+Java knows exactly which method to call while compiling.
+
+➤ When does it occur?
+Static methods
+
+Private methods
+
+Final methods
+
+Overloaded methods
+
+Variables (not methods)
+
+✅ Example:
+
+
+class StaticBindingExample {
+    static void greet() {
+        System.out.println("Hello from static method");
+    }
+
+    public static void main(String[] args) {
+        StaticBindingExample.greet();  // Static Binding
+    }
+}
+
+✅ 2. Dynamic Binding (Late Binding)
+Happens at runtime.
+Java decides which method to call based on the actual object.
+
+➤ When does it occur?
+For overridden methods
+
+When using inheritance + method overriding
+
+✅ Example:
+java
+Copy code
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class DynamicBindingExample {
+    public static void main(String[] args) {
+        Animal a = new Dog();  // Parent reference, child object
+        a.sound();             // Dynamic Binding - Dog's sound() is called
+    }
+}
+
+👉 Even though the reference type is Animal, the actual method of Dog gets executed at runtime.
+
+🧠 Key Differences:
+Feature	Static    Binding	                          Dynamic Binding
+Binding time	  Compile time	                      Runtime
+Works with	      Static, final, private, overloads	  Overridden methods
+Polymorphism	  ❌ No	                              ✅ Yes (Runtime polymorphism)
+Performance	      Faster (compiler resolved)	      Slightly slower (runtime)

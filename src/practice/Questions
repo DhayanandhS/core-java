@@ -1,0 +1,19 @@
+Create a Car class with a constructor that takes brand and speed. Print details using an object.
+
+Overload a method display() in a class Shape to print different shapes like Circle, Rectangle.
+
+Create a Student class with private variables, setters/getters, and print them.
+
+Implement single inheritance: Animal → Dog. Dog should override a method sound().
+
+Write an abstract class Appliance with abstract method turnOn(). Extend it with Fan and Light.
+
+Write a program to demonstrate constructor overloading in a Book class.
+
+Create a class Counter with a static variable. Create 3 objects and show how the static variable behaves.
+
+Write a program where a parent class has a method show(), and the child class overrides it. Use runtime polymorphism to call the method.
+
+Write a class BankAccount with methods: deposit, withdraw, and balance check. Use proper OOP principles.
+
+Demonstrate the use of super keyword to call parent class constructor and method.
