@@ -1,0 +1,84 @@
+What is Abstraction?
+
+Abstract Classes
+
+Interfaces
+
+Differences Between Abstract Class vs Interface
+
+Real-Life Analogy & Code Examples
+
+Quiz with Answers
+
+Let’s begin!
+
+🧠 1. What is Abstraction?
+Abstraction means hiding the internal details and showing only the essential features.
+
+Example: You don’t need to know how System.out.println() works internally, just how to use it.
+
+In Java, abstraction is achieved using:
+
+Abstract classes
+
+Interfaces
+
+------------------------------------------------------------------------------
+
+🏛️ 2. Abstract Classes
+An abstract class is a class that:
+
+Can have abstract methods (no body)
+
+Can also have concrete methods (with body)
+
+Cannot be instantiated (you can't create objects directly)
+
+------------------------------------------------------------------------------
+
+Important:
+
+If a class has even one abstract method, the class must be abstract.
+
+Abstract class can have constructors and variables too.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Is used as a base class
