@@ -1,7 +1,7 @@
 package abstraction;
 
 abstract class Abst{
-	abstract void one();
+	abstract void one(); // no body allowed
 	
 	void print() {
 		System.out.println("Heyyy");
