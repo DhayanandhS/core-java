@@ -1,0 +1,64 @@
+ What is an Interface?
+An interface in Java is like a contract. 
+It contains method declarations (without body), 
+and any class that implements it must define those methods.
+-----------
+interface Animal {
+    void sound();  // method without body
+}
+-----------
+You can’t create objects of an interface directly, 
+but you can use it as a reference type (just like abstract classes).
+
+------------------------------------------------------------------
+
+Interface + Polymorphism
+
+
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat implements Animal {
+    public void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a;
+
+        a = new Dog();   // Runtime Polymorphism
+        a.sound();       // Output: Dog barks
+
+        a = new Cat();   // New object assigned
+        a.sound();       // Output: Cat meows
+    }
+}
+🔥 What’s happening here?
+Term	    Meaning
+Animal a;	Interface reference
+new Dog()	Object of class implementing the interface
+a.sound()	JVM chooses correct method at runtime
+This is runtime polymorphism using interfaces.
+
+🔐 Benefits:
+Loose coupling
+
+Flexibility to swap implementations
+
+Works perfectly in real-world design (like JDBC, Spring, etc.)
+
+✅ Summary:
+Concept	       Description
+Interface	   Only method declarations
+Implement	   Class must define all interface methods
+Polymorphism   Parent reference, child object
+Runtime binding	JVM chooses correct method based on object type
