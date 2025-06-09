@@ -10,13 +10,13 @@ abstract class Abst{
 
 class Abd extends Abst{
 	void one() {
-		System.out.println("there");
+		System.out.println("abd one");
 	}
 }
 
 class Ab extends Abd{
 	void one() {
-		System.out.println("HRU??");
+		System.out.println("ab one");
 	}
 }
 
